@@ -291,13 +291,13 @@ void wizchip_initialize(void) {
         return;
     }
     /* Check PHY link status */
-    do {
-        if (ctlwizchip(CW_GET_PHYLINK, (void *)&temp) == -1) {
-            printf(" Unknown PHY link status\n");
-
-            return;
-        }
-    } while (temp == PHY_LINK_OFF);
+//    do {
+//        if (ctlwizchip(CW_GET_PHYLINK, (void *)&temp) == -1) {
+//            printf(" Unknown PHY link status\n");
+//
+//            return;
+//        }
+//    } while (temp == PHY_LINK_OFF);
 }
 
 void wizchip_check(void) {
